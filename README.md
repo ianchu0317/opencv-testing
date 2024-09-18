@@ -16,5 +16,6 @@ Others: https://opencv.org/releases/
 Recommended (3.4.1) 
 
 # Haar Cascade training
-- GUI for windows: https://www.youtube.com/watch?v=ydSXgBZ1ybk&ab_channel=AdityaPaiThon
+- GUI for windows tutorial: https://www.youtube.com/watch?v=ydSXgBZ1ybk&ab_channel=AdityaPaiThon
+- GUI software for windows: https://amin-ahmadi.com/cascade-trainer-gui/
 - How to train your own cascade: https://github.com/bilardi/how-to-train-cascade
