@@ -1,14 +1,16 @@
 import cv2 as cv
 
 # Open video
-cam = cv.VideoCapture('videos/Pre-created footage for beauty and skin care commercials and promo videos..mp4')
+filename = 'videos/Pre-created footage for beauty and skin care commercials and promo videos..mp4'
+device = 0
+cam = cv.VideoCapture(0)
 
 if not cam.isOpened():
     print("Can't open video file")
     exit()
 
 # Object to detect
-obj_path = "data/haarcascade_frontalcatface.xml"
+obj_path = "hand.xml"
 obj = cv.CascadeClassifier()
 if not obj.load(cv.samples.findFile(obj_path)):
     print("Can't open object cascade xml")

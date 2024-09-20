@@ -1,12 +1,12 @@
 import cv2 as cv
 
 # open file
-filename = 'images/WIN_20240917_22_53_20_Pro.jpg'
+filename = 'training/p/positive.jpg'
 img = cv.imread(filename)
 img_gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
 
 # load object to detect
-obj_path = 'data/haarcascade_frontalcatface.xml'
+obj_path = 'training/classifier/cascade.xml'
 obj = cv.CascadeClassifier(obj_path)
 #obj.load(cv.samples.findFile(obj_path))
 
