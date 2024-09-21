@@ -10,7 +10,7 @@ if not cam.isOpened():
     exit()
 
 # Object to detect
-obj_path = "hand.xml"
+obj_path = "training/classifier/cascade.xml"
 obj = cv.CascadeClassifier()
 if not obj.load(cv.samples.findFile(obj_path)):
     print("Can't open object cascade xml")
