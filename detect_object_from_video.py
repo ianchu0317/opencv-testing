@@ -10,7 +10,7 @@ if not cam.isOpened():
     exit()
 
 # Object to detect
-obj_path = "training/classifier/cascade.xml"
+obj_path = "./hand_cascade.xml"
 obj = cv.CascadeClassifier()
 if not obj.load(cv.samples.findFile(obj_path)):
     print("Can't open object cascade xml")
@@ -24,7 +24,7 @@ while True:
         break
 
     # detect obj
-    obj_frame = obj.detectMultiScale(gray_frame)
+    obj_frame = obj.detectMultiScale(frame)
 
     # draw obj rectangle
     for (x, y, w, h) in obj_frame:
